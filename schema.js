@@ -1,18 +1,18 @@
 export const typeDefs = `#graphql
 type Game {
     id: ID!
-    title: string!
-    platform: [string!]!
+    title: String!
+    platform: [String!]!
 }
 type Review{
     id: ID!
-    rating: int!
-    content: string!
+    rating: Int!
+    content: String!
 }
 type Author{
     id: ID!
-    name: string!
-    verified: boolean!
+    name: String!
+    verified: Boolean!
 }
 type Query{
     reviews: [Review]
@@ -24,4 +24,4 @@ type Query{
 
 // int, float, string, boolean, ID - these are 5 unique data types in graphql
 // if we uses ! it means this field is required*
-// query type is the entry point for our graph
+// query type is the entry point to the graph
